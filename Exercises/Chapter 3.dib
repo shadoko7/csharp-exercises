@@ -1,0 +1,44 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":null,"items":[{"name":"csharp","languageName":"C#","aliases":["c#","cs"]},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"html","languageName":"HTML"},{"name":"sql","languageName":"SQL"},{"name":"kql","languageName":"KQL"},{"name":"mermaid","languageName":"Mermaid"},{"name":"httpRequest","languageName":"http"},{"name":"value"}]}}
+
+#!markdown
+
+### Chapter 3 exercises (page 30)
+
+#!markdown
+
+#### Exercise 3.1
+
+#!csharp
+
+/*
+    This is my first program.
+    It informs about this :)
+*/
+
+Console.WriteLine("My first program");
+
+#!markdown
+
+#### Exercise 3.2
+
+#!csharp
+
+/// <summary> Writes that this is the first program of Shadoko </summary>
+/// <param> Nothing </param>
+/// <returns> Nothing </returns>
+
+Console.WriteLine("My first program");
+
+#!markdown
+
+#### Note
+
+Types of comments in C#:
+
+```
+// Line comment
+/* Block comment */
+/// <summary> XML comment </summary>
+```
