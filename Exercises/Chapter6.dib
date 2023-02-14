@@ -1,0 +1,62 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":null,"items":[{"name":"csharp","languageName":"C#","aliases":["c#","cs"]},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"html","languageName":"HTML"},{"name":"sql","languageName":"SQL"},{"name":"kql","languageName":"KQL"},{"name":"mermaid","languageName":"Mermaid"},{"name":"httpRequest","languageName":"http"},{"name":"value"}]}}
+
+#!markdown
+
+### Chapter 6 exercises (page 49)
+
+#!markdown
+
+#### Exercise 6.1
+
+#!csharp
+
+double firstNumber = 27.6;
+double secondNumber = 31.7;
+
+//Console.WriteLine(firstNumber);
+//Console.WriteLine(secondNumber);
+
+string message = $"{firstNumber}\n{secondNumber}";
+Console.Write(message);
+
+#!markdown
+
+#### Exercise 6.2
+
+#!csharp
+
+Console.WriteLine(" /---\\   |----\\  /----\\");
+Console.WriteLine("|     |  |    |  |");
+Console.WriteLine("|     |  |    /  |");
+Console.WriteLine("|-----|  |----   |");
+Console.WriteLine("|     |  |    \\  |");
+Console.WriteLine("|     |  |    |  |");
+Console.WriteLine("|     |  |----/  \\----/");
+
+#!markdown
+
+#### Exercise 6.3
+
+#!csharp
+
+string line1 = "111\t+\t222\t=\t333";
+string line2 = " +\t\t +\t\t +";
+string line3 = "333\t+\t444\t=\t777";
+string line4 = " =\t\t =\t\t =";;
+string line5 = "444\t+\t666\t=\t1110";
+
+//Console.WriteLine("{0}\n{1}\n{2}\n{3}\n{4}", line1, line2, line3, line4, line5);
+Console.WriteLine($"{line1}\n{line2}\n{line3}\n{line4}\n{line5}");
+
+#!markdown
+
+#### Note
+
+Escape characters in C#:
+
+- \n - new line
+- \t - tab
+- \\\ - backslash
+- \\" - quotation mark
