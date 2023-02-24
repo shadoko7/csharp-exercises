@@ -1,0 +1,91 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":null,"items":[{"name":"csharp","languageName":"C#","aliases":["c#","cs"]},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"html","languageName":"HTML"},{"name":"sql","languageName":"SQL"},{"name":"kql","languageName":"KQL"},{"name":"mermaid","languageName":"Mermaid"},{"name":"httpRequest","languageName":"http"},{"name":"value"}]}}
+
+#!markdown
+
+### Chapter 7 exercises (page 66)
+
+#!markdown
+
+#### Exercise 7.1
+
+#!csharp
+
+int a = 20;
+int b = 7;
+int c = 4;
+
+int result = a % b % c;
+
+Console.WriteLine(result);
+
+#!markdown
+
+#### Exercise 7.2
+
+#!csharp
+
+int a = 256;
+
+Console.WriteLine(a >> 2);
+Console.WriteLine(a << 2);
+
+#!markdown
+
+#### Exercise 7.3
+
+#!csharp
+
+int a = 256;
+int b = 412;
+
+Console.WriteLine(a | b);
+Console.WriteLine(a & b);
+
+#!markdown
+
+#### Exercise 7.4
+
+#!csharp
+
+int a = 15;
+int b = 4;
+
+Console.WriteLine(a ^= b);
+
+#!markdown
+
+#### Exercise 7.5
+
+#!csharp
+
+byte a = 1;
+Console.WriteLine(a);
+
+a <<= 2;
+Console.WriteLine(a);
+
+a++;
+a++;
+a++;
+Console.WriteLine(a);
+
+a *= 10;
+a /= 7;
+Console.WriteLine(a);
+
+#!markdown
+
+#### Exercise 7.6
+
+#!csharp
+
+float a = 5;
+float b = 6;
+Console.WriteLine($"{a} and {b}");
+
+a = a * b;
+b = a / b;
+a = a / b;
+Console.WriteLine($"{a} and {b}");
