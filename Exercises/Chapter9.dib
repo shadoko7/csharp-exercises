@@ -1,0 +1,123 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":null,"items":[{"name":"csharp","languageName":"C#","aliases":["c#","cs"]},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"html","languageName":"HTML"},{"name":"sql","languageName":"SQL"},{"name":"kql","languageName":"KQL"},{"name":"mermaid","languageName":"Mermaid"},{"name":"httpRequest","languageName":"http"},{"name":"value"}]}}
+
+#!markdown
+
+### Chapter 8 exercises (page 75)
+
+#!markdown
+
+#### Exercise 8.1
+
+#!csharp
+
+int i1 = 55, i2 = 13;
+if (i1 % i2 == 0)
+{
+    Console.WriteLine($"Reszta z dzielenia {i1} przez {i2} = 0");
+}
+else
+{
+    Console.WriteLine($"Reszta z dzielenia {i1} przez {i2} != 0");
+}
+
+#!markdown
+
+#### Exercise 8.2
+
+#!csharp
+
+float a = 6.17F, b = -3.38F, c = -8F;
+Console.WriteLine("Równanie kwadratowe dla parametrów:");
+Console.WriteLine($"\na = {a}, b = {b}, c = {c}");
+double delta = Math.Pow(b, 2) - 4 * a * c;
+
+if (delta > 0)
+{
+    Console.WriteLine("\n... ma dwa rozwiązania");
+}
+else if (delta == 0)
+{
+    Console.WriteLine("\n... ma jedno rozwiązanie");
+}
+else
+{
+    Console.WriteLine("\n... nie ma rozwiązań");
+}
+
+#!markdown
+
+#### Exercise 8.3
+
+#!csharp
+
+int i1 = -49;
+if (i1 > 0)
+{
+    Console.WriteLine($"Wartość bezwzględna z liczby {i1} to: {i1}");
+}
+else
+{
+    Console.WriteLine($"Wartość bezwzględna z liczby {i1} to: {-i1}");
+}
+
+#!markdown
+
+#### Exercise 8.4
+
+#!csharp
+
+int p1x = 3, p1y = 9, p2x = 15, p2y = 21;
+Console.WriteLine($"Mamy punkt 1 o współrzęndych: x = {p1x}, y = {p1y} i punkt 2: x = {p2x}, y = {p2y}");
+
+if (p1x == p2x)
+{
+    Console.WriteLine("Powstała z nich prosta jest równoległa do os OY");
+}
+else if (p1y == p2y)
+{
+    Console.WriteLine("Powstała z nich prosta jest równoległa do os OX");
+}
+else
+{
+    Console.WriteLine("Powstała z nich prosta nie jest równoległa do żadnej z osi układu");
+}
+
+#!markdown
+
+#### Exercise 8.5
+
+#!csharp
+
+int p1x = 0, p1y = 0, height = 4, width = 7, p2x = 26, p2y = 1;
+Console.WriteLine($"Mamy prostokąt, którego prawy dolny róg ma współrzędne: ({p1x}, {p1y})");
+Console.WriteLine($"Wysokość prostokąta wynosi: {height}, a jego szerokość: {width}");
+Console.WriteLine($"Mamy też punkt o współrzędnych: ({p2x}, {p2y})");
+
+if (p2x >= p1x && p2x <= p1x + width && p2y >= p1y && p2y <= p1y + height)
+{
+    Console.WriteLine("Punkt ten leży wewnątrz prostokata");
+}
+else
+{
+    Console.WriteLine("Punkt ten nie leży wewnątrz prostokata");
+}
+
+#!markdown
+
+#### Exercise 8.6
+
+#!csharp
+
+byte a = 14, r = 10;
+Console.WriteLine($"Mamy kwadrat o boku: {a} i okrąg o promieniu {r}");
+
+if (a * Math.Sqrt(2) <= 2 * r)
+{
+    Console.WriteLine("Kwadrat ten można zmieścić w okręgu");
+}
+else
+{
+    Console.WriteLine("Kwadratu tego nie można zmieścić w okręgu");
+}
